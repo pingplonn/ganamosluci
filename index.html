@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhatsApp Bonos</title>
+  <title>Plataforma Verificada</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -17,9 +18,11 @@
     t.src='https://connect.facebook.net/en_US/fbevents.js';
     s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script');
+
     fbq('init', '950004187863534');
     fbq('track', 'PageView');
   </script>
+
   <noscript>
     <img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=950004187863534&ev=PageView&noscript=1"/>
@@ -30,29 +33,19 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #1a1a1a;
-      color: #fff;
+      background-color: #ffffff;
+      color: #000;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
-    }
-
-    header {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    .logo-text {
-      color: #D4AF37;
-      font-weight: 700;
-      font-size: 24px;
+      padding-bottom: 100px;
     }
 
     hr {
       width: 100%;
       border: none;
-      border-top: 1px solid #444;
+      border-top: 1px solid #ddd;
       margin: 20px 0;
     }
 
@@ -69,25 +62,28 @@
     .verified h2 {
       font-size: 20px;
       margin: 10px 0;
+      color: #000;
     }
 
     .verified .green {
-      color: #D4AF37;
+      color: #25D366;
       font-weight: 600;
     }
 
     .message {
-      background: #2a2a2a;
+      background: #f3f3f3;
       padding: 15px;
       border-radius: 10px;
       margin: 20px 0;
       font-size: 16px;
-      color: #fff;
+      color: #000;
+      text-align: center;
+      max-width: 350px;
     }
 
     .whatsapp-button {
-      background-color: #D4AF37;
-      color: #1a1a1a;
+      background-color: #25D366;
+      color: #fff;
       padding: 18px 30px;
       border-radius: 50px;
       font-weight: bold;
@@ -97,7 +93,7 @@
       justify-content: center;
       margin-bottom: 20px;
       font-size: 18px;
-      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
       border: none;
       cursor: pointer;
       position: relative;
@@ -114,18 +110,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #bfa437;
+      background-color: #1ebe5d;
       z-index: -1;
       transform: scaleX(0);
       transform-origin: right;
       transition: transform 0.3s ease;
-    }
-
-    .whatsapp-button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px #D4AF37, 
-                  0 0 25px rgba(212, 175, 55, 0.6),
-                  0 0 35px rgba(212, 175, 55, 0.3);
     }
 
     .whatsapp-button:hover::before {
@@ -133,8 +122,11 @@
       transform-origin: left;
     }
 
-    .whatsapp-button:active {
-      transform: translateY(1px);
+    .whatsapp-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 15px #25D366,
+                  0 0 25px rgba(37, 211, 102, 0.6),
+                  0 0 35px rgba(37, 211, 102, 0.3);
     }
 
     .whatsapp-button i {
@@ -144,13 +136,15 @@
 
     @keyframes pulse {
       0% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
       }
+
       70% {
-        box-shadow: 0 0 0 15px rgba(212, 175, 55, 0);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
       }
+
       100% {
-        box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
       }
     }
 
@@ -159,39 +153,143 @@
     }
 
     .clientes {
-      background-color: #444;
-      color: #fff;
+      background-color: #f3f3f3;
+      color: #000;
       padding: 12px 20px;
       border-radius: 30px;
       font-weight: 600;
       margin-bottom: 10px;
-    }
-
-    .trustpilot {
-      font-size: 14px;
-      padding: 8px 15px;
-      border: 1px dashed #999;
-      border-radius: 10px;
-      margin-bottom: 10px;
       text-align: center;
-      color: #ccc;
     }
 
-    .trustpilot img {
-      margin-top: 5px;
-      max-width: 120px;
-    }
+    ..trustpilot {
+  background: #e8f3ef;
+  border: 1px dashed #9fb8ae;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.trustpilot-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tp-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.tp-star {
+  background: #00b67a;
+  color: white;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tp-logo {
+  color: #00b67a;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tp-logo i {
+  font-size: 18px;
+}
 
     .footer {
       position: fixed;
       bottom: 0;
       width: 100%;
-      background: linear-gradient(to right, #bfa437, #D4AF37);
-      color: #1a1a1a;
+      background: linear-gradient(to right, #25D366, #1ebe5d);
+      color: #fff;
       text-align: center;
       padding: 10px;
       font-weight: bold;
       font-size: 14px;
+      z-index: 999;
+    }
+
+    /* POPUP RETIROS */
+
+    .withdraw-popup {
+      position: fixed;
+      bottom: 80px;
+      left: 15px;
+      background: #ffffff;
+      color: #000;
+      border-radius: 14px;
+      padding: 12px 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 9999;
+      width: 260px;
+      max-width: calc(100% - 30px);
+      animation: slideIn 0.4s ease;
+      border-left: 4px solid #25D366;
+    }
+
+    .withdraw-popup img {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+    }
+
+    .withdraw-popup .text {
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .withdraw-popup .amount {
+      color: #25D366;
+      font-weight: 700;
+    }
+
+    .withdraw-popup .time {
+      color: #777;
+      font-size: 11px;
+      margin-top: 2px;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      to {
+        opacity: 0;
+        transform: translateY(20px);
+      }
     }
 
     @media (max-width: 600px) {
@@ -200,28 +298,29 @@
         padding: 16px 25px;
         min-width: 220px;
       }
+
       .clientes {
         font-size: 14px;
-        padding: 12px 18px;
       }
+
       .message {
         font-size: 14px;
       }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo-text">WhatsApp Bonos</div>
-  </header>
 
   <hr />
 
   <section class="verified">
-    <a href="https://wa.me/5493562547986" target="_blank" onclick="fbq('trackCustom', 'ClickWhatsApp')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="50" height="50" />
+    <a href="https://wa.me/5493562454605" target="_blank" onclick="fbq('trackCustom', 'ClickWhatsApp')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
     </a>
+
     <h2>✅ <b>Plataforma Verificada</b> ✅</h2>
+
     <p class="green">Casino de Confianza</p>
   </section>
 
@@ -229,11 +328,14 @@
     Te estamos conectando con nuestro equipo vía WhatsApp.
   </div>
 
-  <a class="whatsapp-button pulse" 
-     href="https://wa.me/5493562547986?text=Quiero%20el%20bono%20del%2020%25" 
+  <a class="whatsapp-button pulse"
+     href="https://wa.me/5493562454605?text=Quiero%20el%20bono%20del%2020%25"
      target="_blank"
      onclick="fbq('trackCustom', 'ClickWhatsApp')">
-    <i class="fab fa-whatsapp"></i> ¡QUIERO MI BONO!
+
+    <i class="fab fa-whatsapp"></i>
+    Ir a WhatsApp Ahora
+
   </a>
 
   <div class="clientes">
@@ -241,9 +343,25 @@
   </div>
 
   <div class="trustpilot">
-    "Excelente" ⭐⭐⭐⭐⭐ Calificación 4.9/5 en Trustpilot<br/>
-    <img src="https://logowik.com/content/uploads/images/trustpilot-stars9095.jpg" alt="Trustpilot" />
+  <div class="trustpilot-content">
+    <span>"Excelente"</span>
+
+    <div class="tp-stars">
+      <div class="tp-star">★</div>
+      <div class="tp-star">★</div>
+      <div class="tp-star">★</div>
+      <div class="tp-star">★</div>
+      <div class="tp-star">★</div>
+    </div>
+
+    <span>Calificación 4.9/5 en</span>
+
+    <div class="tp-logo">
+      <i class="fa-solid fa-star"></i>
+      Trustpilot
+    </div>
   </div>
+</div>
 
   <div class="footer">
     🎁 BONO ACTIVO - ¡Solicítalo ahora por WhatsApp!
@@ -251,14 +369,75 @@
 
   <script>
     const whatsappBtn = document.querySelector('.whatsapp-button');
-    if(whatsappBtn) {
+
+    if (whatsappBtn) {
       whatsappBtn.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.05)';
       });
+
       whatsappBtn.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1)';
       });
     }
+
+    const nombres = [
+      "Juan", "Lucas", "Matias", "Sofia", "Camila",
+      "Thiago", "Martina", "Bruno", "Tomas", "Valentina",
+      "Agustin", "Julieta", "Franco", "Lucia", "Mauro",
+      "Milagros", "Facundo", "Nicolas", "Delfina", "Lautaro"
+    ];
+
+    function generarMonto() {
+      return Math.floor(Math.random() * (150000 - 12500 + 1)) + 12500;
+    }
+
+    function generarTiempo() {
+      return Math.floor(Math.random() * 8) + 1;
+    }
+
+    function mostrarRetiro() {
+      const nombre = nombres[Math.floor(Math.random() * nombres.length)];
+      const monto = generarMonto().toLocaleString("es-AR");
+      const minutos = generarTiempo();
+
+      const popup = document.createElement("div");
+      popup.className = "withdraw-popup";
+
+      popup.innerHTML = `
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" alt="user">
+        <div class="text">
+          <div>
+            <strong>${nombre}</strong> retiró
+            <span class="amount">$${monto}</span>
+          </div>
+
+          <div class="time">
+            Hace ${minutos} min
+          </div>
+        </div>
+      `;
+
+      document.body.appendChild(popup);
+
+      setTimeout(() => {
+        popup.style.animation = "fadeOut 0.5s ease forwards";
+
+        setTimeout(() => {
+          popup.remove();
+        }, 500);
+
+      }, 4500);
+    }
+
+    setTimeout(() => {
+      mostrarRetiro();
+
+      setInterval(() => {
+        mostrarRetiro();
+      }, 7000);
+
+    }, 3000);
   </script>
+
 </body>
 </html>
